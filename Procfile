@@ -1,1 +1,1 @@
-gunicorn endless_photos:app
+web: gunicorn endless_photos:app

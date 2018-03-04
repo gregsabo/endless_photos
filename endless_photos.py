@@ -10,7 +10,6 @@ def get_image():
     images = soup.select(".fullImageLink img")
     if len(images) is 0:
         return "https://upload.wikimedia.org/wikipedia/commons/5/57/Malevich.black-square.jpg"
-    print images[0]['src']
     return images[0]['src']
 
 

@@ -10,6 +10,7 @@ def get_image():
     images = soup.select(".fullImageLink img")
     if len(images) is 0:
         return ""
+    print images[0]['src']
     return images[0]['src']
 
 
@@ -25,9 +26,15 @@ def home():
         <body>
             <style>
                 body {
-                    background-color: grey;
+                    background-color: black;
                     text-align: center;
-                    padding-top: 50px;
+                    margin: 0;
+                    padding: 0;
+
+                }
+
+                img {
+                    width: 100%%;
                 }
             </style>
             <img src="%s" />
